@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<GridPane hgap="20.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="samplerecords.Controller">
+
+    <Label prefHeight="0.0" prefWidth="830.0" text="STUDENT MANAGEMENT SYSTEM" textFill="#1267ff"
+           GridPane.columnIndex="1" GridPane.columnSpan="5">
+        <font>
+            <Font name="Kalinga Bold" size="48.0"/>
+        </font>
+    </Label>
+    <Label text="Basic Info" textFill="#4b52d7" GridPane.rowIndex="2">
+        <font>
+            <Font name="Cambria Math" size="40.0"/>
+        </font>
+    </Label>
+    <Label text="First Name" GridPane.rowIndex="3">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Father's Name" GridPane.rowIndex="4">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Date of Birth" GridPane.rowIndex="5">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Gender" GridPane.columnIndex="2" GridPane.rowIndex="5">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Adhaar No." GridPane.rowIndex="6">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Phone No." GridPane.columnIndex="2" GridPane.rowIndex="6">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Community" GridPane.rowIndex="7">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Course Details" textFill="#4b52d7" GridPane.rowIndex="8">
+        <font>
+            <Font name="Cambria Math" size="40.0"/>
+        </font>
+        <padding>
+            <Insets top="20.0"/>
+        </padding>
+    </Label>
+    <Label text="Department" GridPane.rowIndex="9">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Course" GridPane.columnIndex="2" GridPane.rowIndex="9">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Session" GridPane.rowIndex="10">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Address" textFill="#4b52d7" GridPane.rowIndex="11">
+        <font>
+            <Font name="Cambria Math" size="40.0"/>
+        </font>
+        <padding>
+            <Insets top="20.0"/>
+        </padding>
+    </Label>
+    <Label text="Permanant Address" GridPane.rowIndex="13">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="District" GridPane.columnIndex="2" GridPane.rowIndex="13">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="PIN Code" GridPane.columnIndex="2" GridPane.rowIndex="14">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label prefHeight="20.0" prefWidth="50.0" text="State" GridPane.columnIndex="4" GridPane.rowIndex="13">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+
+    <Label text="email" GridPane.columnIndex="4" GridPane.rowIndex="14">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+
+    <TextField fx:id="st_name" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <TextField fx:id="mid_name" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+    <TextField fx:id="last_name" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+    <TextField fx:id="fat_name" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <DatePicker fx:id="DOB" prefHeight="25.0" prefWidth="201.0" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <TextField fx:id="adhar" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <TextField fx:id="phone" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+    <TextField fx:id="dep" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+    <TextField fx:id="course" GridPane.columnIndex="3" GridPane.rowIndex="9"/>
+    <TextField fx:id="session" GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+    <TextField fx:id="dist" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="13"/>
+    <TextField fx:id="pin" GridPane.columnIndex="3" GridPane.rowIndex="14"/>
+
+    <TextField fx:id="email" GridPane.columnIndex="5" GridPane.rowIndex="14"/>
+    <ComboBox fx:id="gen" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="MALE"/>
+                <String fx:value="FEMALE"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <ComboBox fx:id="com" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="GENERAL"/>
+                <String fx:value="OBC"/>
+                <String fx:value="SC"/>
+                <String fx:value="ST"/>
+                <String fx:value="PH"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <ComboBox fx:id="states" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="13">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Andaman and Nicobar Islands"/>
+                <String fx:value="Andhra Pradesh"/>
+                <String fx:value="Arunachal Pradesh"/>
+                <String fx:value="Assam"/>
+                <String fx:value="Bihar"/>
+                <String fx:value="Chandigarh"/>
+                <String fx:value="Chhattisgarh"/>
+                <String fx:value="Dadra and Nagar Haveli"/>
+                <String fx:value="Daman and Diu"/>
+                <String fx:value="Delhi"/>
+                <String fx:value="Goa"/>
+                <String fx:value="Gujrat"/>
+                <String fx:value="Haryana"/>
+                <String fx:value="Himachal Pradesh"/>
+                <String fx:value="Jammu and Kashmir"/>
+                <String fx:value="Jharkhand"/>
+                <String fx:value="Karnataka"/>
+                <String fx:value="Kerla"/>
+                <String fx:value="Lakshadweep"/>
+                <String fx:value="Maharashtra"/>
+                <String fx:value="Manipur"/>
+                <String fx:value="Meghalaya"/>
+                <String fx:value="Mizoram"/>
+                <String fx:value="Nagaland"/>
+                <String fx:value="Odisha"/>
+                <String fx:value="Kerla"/>
+                <String fx:value="Puducherry"/>
+                <String fx:value="Punjab"/>
+                <String fx:value="Rajasthan"/>
+                <String fx:value="Sikkim"/>
+                <String fx:value="Tamil Nadu"/>
+                <String fx:value="Telangana"/>
+                <String fx:value="Tripura"/>
+                <String fx:value="Uttar Pradesh"/>
+                <String fx:value="Uttarakhand"/>
+                <String fx:value="West Bengal"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Button fx:id="save" onAction="#saves" prefHeight="25.0" prefWidth="83.0" text="Save" GridPane.columnIndex="6"
+            GridPane.rowIndex="13"/>
+    <Button fx:id="clear" onAction="#clears" prefHeight="25.0" prefWidth="83.0" text="Clear" GridPane.columnIndex="6"
+            GridPane.rowIndex="14"/>
+    <Label text="Middle Name" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label text="Last Name" GridPane.columnIndex="4" GridPane.rowIndex="3">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+
+    <TextArea fx:id="address" prefHeight="0.0" prefWidth="201.0" GridPane.columnIndex="1" GridPane.rowIndex="13"
+              GridPane.rowSpan="2"/>
+
+    <MenuBar prefHeight="0.0" prefWidth="1201.0" GridPane.columnSpan="7" GridPane.rowIndex="1">
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="Close" fx:id="close" onAction="#close"/>
+                </items>
+            </Menu>
+
+            <Menu text="Records">
+                <items>
+                    <MenuItem text="Student Records" fx:id="record" onAction="#record"/>
+                </items>
+                <items>
+                    <MenuItem text="Delete Records" fx:id="delrecord" onAction="#delrecord"/>
+                </items>
+
+            </Menu>
+
+            <Menu text="Help">
+                <items>
+                    <MenuItem text="About" fx:id="about" onAction="#abouts"/>
+                </items>
+            </Menu>
+
+        </menus>
+    </MenuBar>
+
+    <padding>
+        <Insets left="35.0"/>
+    </padding>
+
+</GridPane>
